@@ -15,7 +15,9 @@ export default {
   name: 'Home',
   methods: {
     toPage(name) {
-      this.$router.go(-1)
+      this.$router.push({
+        name: 'installment'
+      })
     }
   }
 }

@@ -244,7 +244,7 @@ export default {
   methods: {
     // 返回首页
     back() {
-      this.$router.push({ name: 'home' })
+      this.$router.go(-1)
     },
     // 保存表单
     addItem() {
