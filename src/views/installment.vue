@@ -251,6 +251,7 @@ export default {
       const valid = this.validate()
       if (!valid) return
       this.add(this.generateItem())
+      this.toggleForm(false)
     },
     // 计算结果
     generateItem() {
