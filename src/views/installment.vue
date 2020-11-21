@@ -70,7 +70,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-if="list.length===0"><td colspan="8" style="color:#999">请添加计算</td></tr>
+        <tr v-if="list.length === 0"><td colspan="8" style="color: #999">请添加计算</td></tr>
         <tr v-for="(item, index) in list" :key="index">
           <td>￥{{ item.diff }}</td>
           <td>￥{{ item.base }}</td>
@@ -269,7 +269,7 @@ export default {
       let intervalDays = type === 1 ? 365 / 12 : 365 // 单期天数
       for (let i = 1; i <= count; i++) {
         let curtInterest = toFixed(totalPay * intervalDays * rateDay)
-        console.log(`${totalPay} * ${intervalDays} * ${rateDay} = ${curtInterest}`);
+        console.log(`${totalPay} * ${intervalDays} * ${rateDay} = ${curtInterest}`)
         interest += curtInterest
         totalPay += price + curtInterest
       }
@@ -287,7 +287,7 @@ export default {
         rate
       }
     }
-  },
+  }
 }
 </script>
 
@@ -310,7 +310,7 @@ export default {
   width: 100%;
   border: solid #dedede;
   border-width: 1px 1px 0 0;
-
+  border-collapse: collapse;
   th,
   td {
     border: solid #dedede;
