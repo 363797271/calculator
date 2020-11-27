@@ -1,5 +1,5 @@
 <template>
-  <van-nav-bar title="定期复利计算器" left-text="返回" left-arrow @click-left="back" />
+  <van-nav-bar title="定期复利" left-text="返回" left-arrow @click-left="back" />
 
   <div class="main">
     <div class="form">
